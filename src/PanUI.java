@@ -41,9 +41,9 @@ public class PanUI extends JPanel {
     public Image imgTimeCount1;
     public Image imgTimeCount2;
     public Image imgTimeCount3;
-    public int Time1 = 0;
-    public int Time2 = 2;
-    public int Time3 = 0;
+    public int Time1 = 9;
+    public int Time2 = 9;
+    public int Time3 = 9;
     public Boolean bTimeChanged1;
     public Boolean bTimeChanged2 = false;
     ////       
@@ -93,14 +93,10 @@ public class PanUI extends JPanel {
         g.drawImage(imgLives, 0, 475, null);
         g.drawImage(imgScore, 0, 475 + (imgLives.getHeight(this)), null);
         g.drawImage(imgCoins, 0, 475 + imgScore.getHeight(this) + (imgLives.getHeight(this)), null);
-
-
-
-
         g.drawImage(ariNumbers[(Time1)], 950 + imgTime.getWidth(this), 0, null);
         g.drawImage(ariNumbers[(Time2)], 950 + imgTime.getWidth(this) + 30, 0, null);
         g.drawImage(ariNumbers[(Time3)], 950 + imgTime.getWidth(this) + 60, 0, null);
-        repaint();
+        //repaint();
 
     }
     ActionListener updateImage = new ActionListener() {
