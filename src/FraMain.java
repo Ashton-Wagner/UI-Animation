@@ -8,6 +8,8 @@ public class FraMain extends JFrame {
         setTitle("Animation Test");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        //setResizable(false);
+        setLocationRelativeTo(null);
         add(new PanUI());
     }
 }
